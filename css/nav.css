@@ -125,8 +125,6 @@ body {
     
   }
 }
-<<<<<<< HEAD
-=======
 
 .login-container {
   display: flex;
@@ -196,4 +194,3 @@ body {
 .login-form a:hover {
   text-decoration: underline;
 }
->>>>>>> 79cc527 (Login)
