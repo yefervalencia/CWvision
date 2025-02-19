@@ -1,73 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/FAQ.css">
-  <link rel="stylesheet" href="./css/nav.css">
-  <title>FAQ</title>
-</head>
-<body>
-  <header class="header">
-    <nav>
-      <div class="image">
-        <img src="./images/logo.png" alt="logo CWvision">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/FAQ.css">
+    <script src="./components/navbar/navbar.js"></script>
+    <script src="./components/footer/footer.js"></script>
+    <title>FAQ</title>
+  </head>
+  <body>
+    <header class="header">
+      <navigation-bar></navigation-bar>
+    </header>
+    <main class="faq-container">
+      <div class="faq-content">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-item">
+          <h2>What is CWvision?</h2>
+          <p>
+            CWvision is a platform designed to help clients and workers manage home renovation projects 
+            in real-time. It provides tools for tracking progress, uploading images, and communicating 
+            effectively.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h2>How do I register?</h2>
+          <p>
+            You can register by clicking on the "Get started" button on the homepage or navigation bar. 
+            Fill out the registration form with your details and select your role (client, worker, or admin).
+          </p>
+        </div>
+        <div class="faq-item">
+          <h2>Can I track the progress of my project?</h2>
+          <p>
+            Yes, clients can track the progress of their projects in real-time through the dashboard. 
+            Workers can update the status and upload images to keep clients informed.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h2>Is there a mobile app?</h2>
+          <p>
+            Currently, CWvision is only available as a web platform. A mobile app may be developed in 
+            future updates.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h2>How do I contact support?</h2>
+          <p>
+            You can reach out to our support team through the "Contact Us" page. We are available to 
+            assist you with any questions or issues.
+          </p>
+        </div>
       </div>
-      <div class="buttons">
-        <button><a href="home.html">Home</a></button>
-        <button><a href="aboutUs.html">About Us</a></button>
-        <button><a href="contactUs.html">Contact Us</a></button>
-        <button><a href="FAQ.html">FAQ</a></button>
-      </div>
-      <div class="auth">
-        <a href="login.html" class="login">Login</a>
-        <button><a href="register.html">Get started</a></button>
-      </div>
-    </nav>
-  </header>
-  <main class="faq-container">
-    <div class="faq-content">
-      <h1>Frequently Asked Questions</h1>
-      <div class="faq-item">
-        <h2>What is CWvision?</h2>
-        <p>
-          CWvision is a platform designed to help clients and workers manage home renovation projects 
-          in real-time. It provides tools for tracking progress, uploading images, and communicating 
-          effectively.
-        </p>
-      </div>
-      <div class="faq-item">
-        <h2>How do I register?</h2>
-        <p>
-          You can register by clicking on the "Get started" button on the homepage or navigation bar. 
-          Fill out the registration form with your details and select your role (client, worker, or admin).
-        </p>
-      </div>
-      <div class="faq-item">
-        <h2>Can I track the progress of my project?</h2>
-        <p>
-          Yes, clients can track the progress of their projects in real-time through the dashboard. 
-          Workers can update the status and upload images to keep clients informed.
-        </p>
-      </div>
-      <div class="faq-item">
-        <h2>Is there a mobile app?</h2>
-        <p>
-          Currently, CWvision is only available as a web platform. A mobile app may be developed in 
-          future updates.
-        </p>
-      </div>
-      <div class="faq-item">
-        <h2>How do I contact support?</h2>
-        <p>
-          You can reach out to our support team through the "Contact Us" page. We are available to 
-          assist you with any questions or issues.
-        </p>
-      </div>
-    </div>
-  </main>
-  <footer>
-    <p>&copy; 2020</p>
-  </footer>
-</body>
+    </main>
+    <footer>
+      <foot-page></foot-page>
+    </footer>
+  </body>
 </html>

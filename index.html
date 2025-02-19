@@ -1,36 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/nav.css">
-    <title>Index
-  </title>
-</head>
-<body>
-  <header class="header">
-    <nav>
-      <div class="image">
-      <img src="./images/logo.png" alt="logo CWvision">
-      </div>
-      <div class="buttons">
-        <button><a href="home.html">Home</a></button>
-        <button><a href="aboutUs.html">About Us</a></button>
-        <button><a href="contactUs.html">Contact Us</a></button>
-        <button><a href="FAQ.html">FAQ</a></button>
-      </div>
-      <div class="auth">
-        <a href="login.html" class="login">Login</a>
-        <button><a href="register.html">Get started</a></button>
-      </div>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/home-content.css">
+    <script src="./components/navbar/navbar.js"></script>
+    <script src="./components/footer/footer.js"></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <navigation-bar></navigation-bar>
+    </header>
     <main>
-      <p>Welcome to the index page.</p>
+      <section class="hero">
+        <div>
+          <h1>Bienvenido a nuestra plataforma de remodelaciones</h1>
+          <p>
+            Controla y visualiza el progreso de tus remodelaciones y
+            construcciones en tiempo real.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="como-funciona">
+        <h2>¿Cómo funciona?</h2>
+        <p>
+          Sube imágenes, visualiza materiales utilizados y sigue el progreso de
+          tu obra con nuestra plataforma.
+        </p>
+        <img src="como-funciona.jpg" alt="Explicación de la plataforma" />
+      </section>
+
+      <section class="section" id="usuarios">
+        <h2>¿Quiénes pueden usar nuestra plataforma?</h2>
+        <div class="container">
+          <div class="card">
+            <h3>Clientes</h3>
+            <p>
+              Los clientes pueden seguir el avance de su proyecto en tiempo
+              real.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Arquitectos</h3>
+            <p>
+              Los arquitectos pueden subir diseños y coordinar con los clientes.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Contratistas</h3>
+            <p>
+              Los contratistas pueden actualizar el estado de la construcción y
+              materiales utilizados.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contacto">
+        <h2>Contacto</h2>
+        <p>
+          Si tienes preguntas, contáctanos a través de nuestras redes sociales o
+          envíanos un mensaje.
+        </p>
+      </section>
     </main>
     <footer>
-      <p>&copy; 2020</p>
+      <foot-page></foot-page>
     </footer>
-  
-</body>
+  </body>
 </html>

@@ -1,0 +1,35 @@
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-container div {
+  flex: 1;
+  margin: 10px;
+}
+.footer-container h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footer-container p, .footer-container ul {
+  font-size: 14px;
+  list-style: none;
+  padding: 0;
+}
+.footer-container ul li {
+  margin: 5px 0;
+}
+.footer-container a {
+  color: white;
+  text-decoration: none;
+}
+.footer-container a:hover {
+  text-decoration: underline;
+}
+.footer-container img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}

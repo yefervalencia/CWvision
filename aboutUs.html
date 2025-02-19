@@ -1,42 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/nav.css">
-  <link rel="stylesheet" href="./css/aboutUs.css">
-  <title>About Us - CWvision</title>
-</head>
-<body>
-  <header class="header">
-    <nav>
-      <div class="image">
-        <img src="./images/logo.png" alt="logo CWvision">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/aboutUs.css">
+    <script src="./components/navbar/navbar.js"></script>
+    <script src="./components/footer/footer.js"></script>
+    <title>About Us - CWvision</title>
+  </head>
+  <body>
+    <header class="header">
+      <navigation-bar></navigation-bar>
+    </header>
+    <main class="about-us-container">
+      <div class="about-us-content">
+        <h1>About Us</h1>
+        <p>Welcome to CWvision, your trusted partner in home renovation and remodeling projects. Our mission is to provide a seamless and transparent experience for both clients and contractors, ensuring that every project is completed on time and to the highest standards.</p>
+        <h2>Our Vision</h2>
+        <p>At CWvision, we envision a world where home renovation projects are no longer a source of stress and uncertainty. Our platform bridges the gap between clients and contractors, offering real-time updates, transparent communication, and a centralized hub for all project-related information.</p>
+        <h2>Our Team</h2>
+        <p>Our team is composed of experienced professionals in the fields of construction, software development, and project management. We are dedicated to delivering innovative solutions that simplify the renovation process and enhance the overall experience for everyone involved.</p>
       </div>
-      <div class="buttons">
-        <button><a href="home.html">Home</a></button>
-        <button><a href="aboutUs.html">About Us</a></button>
-        <button><a href="contactUs.html">Contact Us</a></button>
-        <button><a href="FAQ.html">FAQ</a></button>
-      </div>
-      <div class="auth">
-        <a href="login.html" class="login">Login</a>
-        <button><a href="register.html">Get started</a></button>
-      </div>
-    </nav>
-  </header>
-  <main class="about-us-container">
-    <div class="about-us-content">
-      <h1>About Us</h1>
-      <p>Welcome to CWvision, your trusted partner in home renovation and remodeling projects. Our mission is to provide a seamless and transparent experience for both clients and contractors, ensuring that every project is completed on time and to the highest standards.</p>
-      <h2>Our Vision</h2>
-      <p>At CWvision, we envision a world where home renovation projects are no longer a source of stress and uncertainty. Our platform bridges the gap between clients and contractors, offering real-time updates, transparent communication, and a centralized hub for all project-related information.</p>
-      <h2>Our Team</h2>
-      <p>Our team is composed of experienced professionals in the fields of construction, software development, and project management. We are dedicated to delivering innovative solutions that simplify the renovation process and enhance the overall experience for everyone involved.</p>
-    </div>
-  </main>
-  <footer>
-    <p>&copy; 2020 CWvision. All rights reserved.</p>
-  </footer>
-</body>
+    </main>
+    <footer>
+      <foot-page></foot-page>
+    </footer>
+  </body>
 </html>
