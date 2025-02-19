@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/register.css">
     <script src="./components/navbar/navbar.js"></script>
     <script src="./components/footer/footer.js"></script>
+    <script src="./logic/register.js"></script>
     <title>Register</title>
   </head>
   <body>
@@ -17,17 +18,17 @@
       <div class="register-form">
         <h2>Register</h2>
         <form action="#" method="post">
-          <input type="text" placeholder="Full Name" required>
-          <input type="email" placeholder="Email" required>
-          <input type="password" placeholder="Password" required>
-          <input type="password" placeholder="Confirm Password" required>
-          <select name="role" required>
+          <input type="text" placeholder="Full Name" id="name" required>
+          <input type="email" placeholder="Email" id="email" required>
+          <input type="password" placeholder="Password" id="password" required>
+          <input type="password" placeholder="Confirm Password" id="verifyPassword" required>
+          <select name="role" id="role" required>
             <option value="" disabled selected>Select your role</option>
-            <option value="client">Client</option>
-            <option value="worker">Worker</option>
+            <option value="Company">Company</option>
+            <option value="client">client</option>
             <option value="admin">Admin</option>
           </select>
-          <button type="submit">Register</button>
+          <button type="button" onclick="capturar()">Register</button>
         </form>
         <p>Already have an account? <a href="login.html">Login here</a></p>
       </div>

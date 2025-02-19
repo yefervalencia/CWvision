@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/general.css" />
-    <link rel="stylesheet" href="./css/contactUs.css">
+    <link rel="stylesheet" href="./css/contactUs.css" />
     <script src="./components/navbar/navbar.js"></script>
     <script src="./components/footer/footer.js"></script>
+    <script src="./logic/contactUs.js"></script>
     <title>Contact Us</title>
   </head>
   <body>
@@ -17,20 +18,27 @@
       <div class="contact-content">
         <h1>Contact Us</h1>
         <p>
-          If you have any questions, feedback, or need assistance, feel free to reach out to us. 
-          Our team is here to help you!
+          If you have any questions, feedback, or need assistance, feel free to
+          reach out to us. Our team is here to help you!
         </p>
         <form class="contact-form">
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <textarea placeholder="Your Message" rows="5" required></textarea>
-          <button type="submit">Send Message</button>
+          <input type="text" placeholder="Your Name" id="name" required />
+          <input type="email" placeholder="Your Email" id="email" required />
+          <textarea
+            placeholder="Your Message"
+            rows="5"
+            id="message"
+            required
+          ></textarea>
+          <button type="button" onclick="capturar()">Send Message</button>
         </form>
         <div class="contact-info">
           <h2>Contact Information</h2>
           <p><strong>Email:</strong> support@cwvision.com</p>
-          <p><strong>Phone:</strong> +1 (123) 456-7890</p>
-          <p><strong>Address:</strong> 123 Construction St, Renocity, RC 12345</p>
+          <p><strong>Phone:</strong> +57 (123) 456-7890</p>
+          <p>
+            <strong>Address:</strong> 123 Construction St, Renocity, RC 12345
+          </p>
         </div>
       </div>
     </main>
