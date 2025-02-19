@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/nav.css">
-    <title>Index
-  </title>
+  <link rel="stylesheet" href="./css/register.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <title>Register</title>
 </head>
 <body>
   <header class="header">
     <nav>
       <div class="image">
-      <img src="./images/logo.png" alt="logo CWvision">
+        <img src="./images/logo.png" alt="logo CWvision">
       </div>
       <div class="buttons">
         <button><a href="home.html">Home</a></button>
@@ -25,12 +25,27 @@
       </div>
     </nav>
   </header>
-    <main>
-      <p>Welcome to the register page.</p>
-    </main>
-    <footer>
-      <p>&copy; 2020</p>
-    </footer>
-  
+  <main class="register-container">
+    <div class="register-form">
+      <h2>Register</h2>
+      <form action="#" method="post">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+        <select name="role" required>
+          <option value="" disabled selected>Select your role</option>
+          <option value="client">Client</option>
+          <option value="worker">Worker</option>
+          <option value="admin">Admin</option>
+        </select>
+        <button type="submit">Register</button>
+      </form>
+      <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2020</p>
+  </footer>
 </body>
 </html>
