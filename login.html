@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/login.css">
     <script src="./components/navbar/navbar.js"></script>
     <script src="./components/footer/footer.js"></script>
+    <script src="./logic/login.js"></script>
     <title>Login</title>
   </head>
   <body>
@@ -16,9 +18,9 @@
       <div class="login-form">
         <h2>Login</h2>
         <form action="#" method="post">
-          <input type="email" placeholder="Email" required />
-          <input type="password" placeholder="Password" required />
-          <button type="submit">Login</button>
+          <input type="email" placeholder="Email" id="email" required />
+          <input type="password" placeholder="Password" id="password" required />
+          <button type="button" onclick="capturar()">Login</button>
         </form>
         <a href="forgot-password.html">Forgot password?</a>
       </div>
