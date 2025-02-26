@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/general.css" />
+  <link rel="stylesheet" href="./css/notificaciones.css" />
+  <script src="./components/navbar/navbarCliente.js"></script>
+  <script src="./components/footer/footer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./logic/notificaciones.js" defer></script>
+  <title>Notificaciones - CWvision</title>
+</head>
+<body>
+  <header>
+    <navigation-bar-cliente></navigation-bar-cliente>
+  </header>
+  <main>
+    <section class="section notifications">
+      <h2>Notificaciones</h2>
+      <div class="container notification-list" id="notification-list">
+        <!-- Notificaciones se cargarán dinámicamente -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <foot-page></foot-page>
+  </footer>
+</body>
+</html>

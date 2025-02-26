@@ -1,0 +1,200 @@
+/* Estilos Generales */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+  }
+  
+  h2 {
+    font-size: 32px;
+    color: #A61414;
+    margin-bottom: 30px;
+  }
+  
+  /* Vista 1: Resumen del Proyecto */
+  .summary-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .progress-container {
+    margin-bottom: 30px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 20px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px auto;
+    position: relative;
+  }
+  
+  .progress {
+    height: 100%;
+    background: #A61414;
+    border-radius: 10px;
+    width: 0;
+    transition: width 1s ease-in-out;
+  }
+  
+  .status-container p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .status-container strong {
+    color: #A61414;
+  }
+  
+  .phases-summary {
+    margin: 30px 0;
+  }
+  
+  .phases-summary h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .phases-summary ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .phases-summary li {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .completed {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .pending {
+    color: #dc3545;
+    font-weight: bold;
+  }
+  
+  /* Botones */
+  .btn-primary, .btn-secondary {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary {
+    background: #A61414;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background: #8a0f0f;
+  }
+  
+  .btn-secondary {
+    background: #fff;
+    border: 2px solid #A61414;
+    color: #A61414;
+  }
+  
+  .btn-secondary:hover {
+    background: #A61414;
+    color: #fff;
+  }
+  
+  /* Vista 2: Detalle de Fases */
+  .project-phases .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card h3 {
+    font-size: 24px;
+    color: #A61414;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .card .status {
+    font-weight: bold;
+  }
+  
+  .card .completed {
+    color: #28a745;
+  }
+  
+  .card .in-progress {
+    color: #ffc107;
+  }
+  
+  .card .pending {
+    color: #dc3545;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .section {
+      padding: 40px 10px;
+    }
+  
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    .phases-summary ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }

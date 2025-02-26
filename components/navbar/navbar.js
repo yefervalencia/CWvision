@@ -2,10 +2,12 @@ class NavigationBar extends HTMLElement{
   constructor(){
     super();
   }
+  
   connectedCallback(){
     this.style();
     this.render();
   }
+
   style(){
     this.innerHTML =`
     <style>

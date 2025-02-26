@@ -1,0 +1,104 @@
+/* Estilos Generales */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .section.history {
+    padding: 60px 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  
+  h2 {
+    font-size: 32px;
+    color: #A61414;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Filtro */
+  .filter-container {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .filter-container label {
+    font-size: 18px;
+    color: #555;
+    margin-right: 10px;
+  }
+  
+  .filter-container select {
+    padding: 10px;
+    border: 2px solid #A61414;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .filter-container select:hover {
+    border-color: #8a0f0f;
+  }
+  
+  /* Lista de Historial */
+  .history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .history-list .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .history-list .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .history-list .card p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .history-list .card strong {
+    color: #A61414;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .section.history {
+      padding: 40px 10px;
+    }
+  
+    .filter-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .filter-container label {
+      margin-bottom: 10px;
+    }
+  
+    .history-list .card {
+      width: 100%;
+      max-width: 400px;
+    }
+  }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/general.css" />
+  <link rel="stylesheet" href="./css/historial.css" />
+  <script src="./components/navbar/navbarCliente.js"></script>
+  <script src="./components/footer/footer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./logic/historial.js" defer></script>
+  <title>Historial - CWvision</title>
+</head>
+<body>
+  <header>
+    <navigation-bar-cliente></navigation-bar-cliente>
+  </header>
+  <main>
+    <section class="section history">
+      <h2>Historial de Cambios</h2>
+      <div class="filter-container">
+        <label for="filter-phase">Filtrar por Fase:</label>
+        <select id="filter-phase" onchange="filterHistory()">
+          <option value="all">Todas</option>
+          <option value="Demolición">Demolición</option>
+          <option value="Instalación Eléctrica">Instalación Eléctrica</option>
+          <option value="Pintura">Pintura</option>
+        </select>
+      </div>
+      <div class="container history-list" id="history-list"></div>
+    </section>
+  </main>
+  <footer>
+    <foot-page></foot-page>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/general.css" />
+  <link rel="stylesheet" href="./css/detallesFace.css" />
+  <script src="./components/navbar/navbarCliente.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./logic/detallesFace.js" defer></script>
+  <title>Detalles de Fase - CWvision</title>
+</head>
+<body>
+  <header>
+    <navigation-bar-cliente></navigation-bar-cliente>
+  </header>
+  <main>
+    <section class="phase-detail">
+      <h1 id="phase-title">Detalles de la Fase</h1>
+      <div class="phase-info">
+        <p><strong>Estado:</strong> <span id="phase-status">Completado</span></p>
+        <p><strong>Fecha de Inicio:</strong> <span id="phase-start">01/01/2025</span></p>
+        <p><strong>Fecha de Finalización:</strong> <span id="phase-end">15/01/2025</span></p>
+        <p><strong>Descripción:</strong> <span id="phase-description">Retiro de estructuras antiguas.</span></p>
+      </div>
+      <div class="phase-gallery">
+        <h2>Galería de Imágenes</h2>
+        <div class="image-grid" id="image-grid">
+          <!-- Imágenes se cargarán dinámicamente -->
+        </div>
+      </div>
+      <button class="btn-primary" onclick="window.location.href='./clienteHome.html'">Volver al Listado</button>
+    </section>
+  </main>
+  <footer>
+    <foot-page></foot-page>
+  </footer>
+</body>
+</html>
