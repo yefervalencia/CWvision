@@ -1,0 +1,60 @@
+.panel-obras {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.panel-obras h1 {
+  font-size: 28px;
+  color: #A61414;
+  margin-bottom: 20px;
+}
+
+.obras-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.obra-card {
+  width: 300px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.obra-card h2 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.obra-card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.btn-detalles {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #A61414;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-detalles:hover {
+  background-color: #800f0f;
+}

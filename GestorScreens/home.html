@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Obras Asignadas</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/gestor-home.css">
+    <script src="../components/footer/footer.js"></script>
+    <script src="../components/gestorNavbar/gestorNavbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <gestor-navbar></gestor-navbar>
+    </header>
+    <main class="panel-obras">
+        <h1>Obras Asignadas</h1>
+        
+        <div class="obras-container">
+            <div class="obra-card">
+                <h2>Proyecto 1</h2>
+                <p>Ubicación: Bogotá, Colombia</p>
+                <p>Estado: En Progreso</p>
+                <button class="btn-detalles">Ver Detalles</button>
+            </div>
+    
+            <div class="obra-card">
+                <h2>Proyecto 2</h2>
+                <p>Ubicación: Medellín, Colombia</p>
+                <p>Estado: Pendiente</p>
+                <button class="btn-detalles">Ver Detalles</button>
+            </div>
+    
+            <div class="obra-card">
+                <h2>Proyecto 3</h2>
+                <p>Ubicación: Cali, Colombia</p>
+                <p>Estado: Finalizado</p>
+                <button class="btn-detalles">Ver Detalles</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <foot-page></foot-page>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            Swal.fire("Bienvenido al Panel de Obras Asignadas");
+        });
+    </script>
+</body>
+</html>

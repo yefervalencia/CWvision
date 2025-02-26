@@ -49,6 +49,7 @@ class FootPage extends HTMLElement {
     `;
   }
 
+
   render() {
     this.innerHTML += `
     <div class="footer-container">
