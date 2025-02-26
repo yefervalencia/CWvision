@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Obras</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/history.css">
+    <script src="../components/footer/footer.js"></script>
+    <script src="../components/gestorNavbar/gestorNavbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+<gestor-navbar></GestorNavbar>
+    </header>
+    <main class="history">
+        <h1>Historial de Reportes</h1>
+        
+        <div class="filters">
+            <label for="dateFilter">Filtrar por fecha:</label>
+            <input type="date" id="dateFilter">
+            
+            <label for="statusFilter">Estado:</label>
+            <select id="statusFilter">
+                <option value="all">Todos</option>
+                <option value="completed">Completados</option>
+                <option value="pending">Pendientes</option>
+                <option value="in-progress">En progreso</option>
+            </select>
+    
+            <button class="btn-filter">Aplicar Filtros</button>
+        </div>
+    
+        <div class="report-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Fecha</th>
+                        <th>Descripción</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#001</td>
+                        <td>2025-02-20</td>
+                        <td>Inspección de obra en sector norte</td>
+                        <td class="status completed">Completado</td>
+                        <td><button class="btn-view">Ver</button></td>
+                    </tr>
+                    <tr>
+                        <td>#002</td>
+                        <td>2025-02-21</td>
+                        <td>Supervisión de materiales</td>
+                        <td class="status pending">Pendiente</td>
+                        <td><button class="btn-view">Ver</button></td>
+                    </tr>
+                    <tr>
+                        <td>#003</td>
+                        <td>2025-02-22</td>
+                        <td>Control de calidad en estructura</td>
+                        <td class="status in-progress">En progreso</td>
+                        <td><button class="btn-view">Ver</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <div class="report-summary">
+            <h2>Resumen de Reportes</h2>
+            <div class="stats">
+                <div class="stat-box completed">
+                    <p>Completados</p>
+                    <span>15</span>
+                </div>
+                <div class="stat-box pending">
+                    <p>Pendientes</p>
+                    <span>5</span>
+                </div>
+                <div class="stat-box in-progress">
+                    <p>En progreso</p>
+                    <span>8</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <foot-page></foot-page>
+    </footer>
+    
+</body>
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            Swal.fire("Bienvenido al Historial de Obras");
+        });
+    </script>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/general.css" />
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/login.css" />
     <script src="./components/navbar/navbar.js"></script>
     <script src="./components/footer/footer.js"></script>
     <script src="./logic/login.js"></script>
@@ -19,8 +19,18 @@
         <h2>Login</h2>
         <form action="#" method="post">
           <input type="email" placeholder="Email" id="email" required />
-          <input type="password" placeholder="Password" id="password" required />
-          <button type="button" onclick="capturar()">Login</button>
+          <input
+            type="password"
+            placeholder="Password"
+            id="password"
+            required
+          />
+          <label for="roleSelector">Selecciona tu rol:</label>
+          <select id="roleSelector">
+            <option value="cliente">Cliente</option>
+            <option value="gestor">Gestor</option>
+          </select>
+          <button type="button" onclick="login()">Login</button>
         </form>
         <a href="forgotPassword.html">Forgot password?</a>
       </div>
@@ -28,5 +38,16 @@
     <footer>
       <foot-page></foot-page>
     </footer>
+
+    <script>
+      function login() {
+        var role = document.getElementById("roleSelector").value;
+        if (role === "gestor") {
+          window.location.href = "GestorScreens/home.html";
+        } else {
+          window.location.href = "home.html";
+        }
+      }
+    </script>
   </body>
 </html>
