@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/general.css" />
+  <link rel="stylesheet" href="./css/clienteHome.css" />
+  <script src="./components/navbar/navbarCliente.js"></script>
+  <script src="./components/footer/footer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./logic/clienteHome.js" defer></script>
+  <title>Home Cliente - CWvision</title>
+</head>
+<body>
+  <header>
+    <navigation-bar-cliente></navigation-bar-cliente>
+  </header>
+  <main>
+    <!-- Vista 1: Panel de Resumen del Proyecto -->
+    <section class="section project-summary" id="summary">
+      <h2>Resumen de tu Proyecto</h2>
+      <div class="summary-container">
+        <div class="progress-container">
+          <p>Progreso General: <span id="progress-percent">75%</span></p>
+          <div class="progress-bar">
+            <div class="progress" id="progress-fill"></div>
+          </div>
+        </div>
+        <div class="status-container">
+          <p><strong>Fecha de Inicio:</strong> 01/01/2025</p>
+          <p><strong>Fecha Estimada de Finalización:</strong> 30/06/2025</p>
+          <p><strong>Estado Actual:</strong> En progreso</p>
+        </div>
+        <div class="phases-summary">
+          <h3>Fases del Proyecto</h3>
+          <ul>
+            <li>Completadas: <span class="completed">3</span></li>
+            <li>Pendientes: <span class="pending">2</span></li>
+          </ul>
+        </div>
+        <button class="btn-primary" onclick="goToSection('phases')">Ver Detalles de Fases</button>
+      </div>
+    </section>
+
+    <!-- Vista 2: Detalle de Fases del Proyecto -->
+    <section class="section project-phases" id="phases">
+      <h2>Fases del Proyecto</h2>
+      <div class="container">
+        <div class="card">
+          <h3>Demolición</h3>
+          <p><strong>Estado:</strong> <span class="status completed">Completado</span></p>
+          <p><strong>Inicio:</strong> 01/01/2025 - <strong>Fin:</strong> 15/01/2025</p>
+          <p>Retiro de estructuras antiguas.</p>
+          <button class="btn-secondary" onclick="window.location.href='./detallesFace.html?phase=Demolición'">Ver Detalles</button>
+        </div>
+        <div class="card">
+          <h3>Instalación Eléctrica</h3>
+          <p><strong>Estado:</strong> <span class="status in-progress">En progreso</span></p>
+          <p><strong>Inicio:</strong> 16/01/2025 - <strong>Fin:</strong> 28/02/2025 (Est.)</p>
+          <p>Cableado y conexión eléctrica.</p>
+          <button class="btn-secondary" onclick="window.location.href='./detallesFace.html?phase=Instalación Eléctrica'">Ver Detalles</button>
+        </div>
+        <div class="card">
+          <h3>Pintura</h3>
+          <p><strong>Estado:</strong> <span class="status pending">Pendiente</span></p>
+          <p><strong>Inicio:</strong> 01/03/2025 (Est.)</p>
+          <p>Aplicación de pintura interior y exterior.</p>
+          <button class="btn-secondary" onclick="window.location.href='./detallesFace.html?phase=Pintura'">Ver Detalles</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <foot-page></foot-page>
+  </footer>
+</body>
+</html>
