@@ -3,19 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background: #C8C8C8;
   display: grid;
-  min-height:100dvh;
-  grid-template-rows: auto 1fr auto;
-
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto; /* Header, Main, Footer */
 }
-header{
+
+header {
   width: 100%;
-  height: 127px;
   background-color: #f2f2f2;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
+
 footer {
   background-color: #333;
   color: white;

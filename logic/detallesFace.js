@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("phase-description").textContent = phaseData[phase].description;
   
       // Cargar imágenes de la galería
-      const imageGrid = document.getElementById("image-grid");
+      const imageGrid = document.getElementById("clear-grid");
       phaseData[phase].images.forEach((image) => {
         const imgElement = document.createElement("img");
         imgElement.src = image;
